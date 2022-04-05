@@ -1,0 +1,11 @@
+spring:
+    config:
+        activate:
+            on-profile: local
+    
+resttemplate:
+    timeout: 10000
+
+url:
+    validacion: "http://172.25.230.2:8556/Validacion/TuCompraListasRestrictivas"
+#  evidente: "http://172.30.150.10:8554/Evidente/TuCompraEvidenteService"

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<bindings xmlns="http://java.sun.com/xml/ns/jaxb" if-exists="true" version="2.1">
+  <!--
+
+Este archivo ha sido generado por la arquitectura JavaTM para la implantación de la referencia de enlace (JAXB) XML v2.2.11 
+Visite <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
+Todas las modificaciones realizadas en este archivo se perderán si se vuelve a compilar el esquema de origen. 
+Generado el: 2022.04.05 a las 07:56:08 AM COT 
+
+  -->
+  <bindings xmlns:tns="http://validacion.tucompra.com.co/" if-exists="true" scd="x-schema::tns">
+    <schemaBindings map="false">
+      <package name="co.com.tucompra.validacion"/>
+    </schemaBindings>
+    <bindings if-exists="true" scd="~tns:validarListasRestrictivas">
+      <class ref="co.com.tucompra.validacion.ValidarListasRestrictivas"/>
+    </bindings>
+    <bindings if-exists="true" scd="~tns:validarListasRestrictivasResponse">
+      <class ref="co.com.tucompra.validacion.ValidarListasRestrictivasResponse"/>
+    </bindings>
+    <bindings if-exists="true" scd="~tns:Exception">
+      <class ref="co.com.tucompra.validacion.Exception"/>
+    </bindings>
+    <bindings if-exists="true" scd="~tns:listaRestrictivas">
+      <class ref="co.com.tucompra.validacion.ListaRestrictivas"/>
+    </bindings>
+  </bindings>
+</bindings>

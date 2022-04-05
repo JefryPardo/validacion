@@ -1,0 +1,60 @@
+server:
+  port: 8084
+  servlet:
+      #jetty
+    contextPath: "/app/*"
+      #tomcat
+    context-path: "/api"
+    
+spring:
+    profiles:
+        active: @activatedProperties@
+
+#endpoints:
+#    concentrador:
+#        mediospago: "metodopago/"
+#        validadores: "validadores/"
+#        clientesmetododata: "clientesmetododata/"
+#    concentradortc:
+#        concentradorIntegracion: "concentradorIntegracion/"
+#    admintc:
+#        terminales: "terminales/"
+#        configuracionvisual: "configuracionvisual/"
+#        pais: "pais/"
+#        ciudad: "ciudades/"
+#        trm: "trm/"
+#        configcodbarraspdfimagenes: "configcodbarraspdfimagenes/"
+#        configserial: "configserial/"
+#        bolsaconsultasevidente: "bolsaconsultasevidente/"
+#        bolsaconsultascifin: "bolsaconsultascifin/"
+#        bolsaconsultas3DS: "bolsaconsultas3DS/"
+#        logconsultaevidente: "logconsultaevidente/"
+#        logconsultacifin: "logconsultacifin/"
+#        logconsulta3DS: "logconsulta3ds/"
+#    pse: 
+#        bancos: "pse/"
+#    transacciones:
+#        transacciones: "transacciones/"
+#
+#issuingCountryIsoa2Cuotas: "CO"
+
+#urls:
+#    proip: "http://pro.ip-api.com/json/{iprequest}?key={key}"
+
+#keys:
+#    proip: 6Cw6kbjFWrBZBbN
+    
+#parametros:
+#    idConfiguracionVisual: 3
+#    modulo: TC-INTEGRACION
+#    tiposMoneda: COP,USD,EUR
+#    hasErrorsPSE: false
+
+#jwt:
+#  token:
+#    secret-key: kkAjDVvHSL5QBeGsO7DwN6H6hNXS3ICC
+#    expire-length-minutos: 10
+#  token-refresh:
+#    expire-length-minutos: 20
+    
+#razonRechazoUsuario: "Transacción abortada por el usuario"
