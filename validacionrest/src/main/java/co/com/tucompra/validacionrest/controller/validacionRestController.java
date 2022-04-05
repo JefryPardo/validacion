@@ -6,6 +6,7 @@ package co.com.tucompra.validacionrest.controller;
 
 import co.com.tucompra.validacion.ValidarListasRestrictivas;
 import co.com.tucompra.validacion.ValidarListasRestrictivasResponse;
+import co.com.tucompra.validacionrest.dto.Informe;
 import co.com.tucompra.validacionrest.service.impl.ValidacionServiceImpl;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -31,17 +32,17 @@ public class validacionRestController {
     private ValidacionServiceImpl validacionServiceImpl;
     
     @PostMapping("validarPersona")
-    public ResponseEntity<ValidarListasRestrictivasResponse> validarPersona(@RequestBody ValidarListasRestrictivas lista) {
+    public ResponseEntity<Informe> validarPersona(@RequestBody ValidarListasRestrictivas lista) {
     
         System.out.println("Entro: " + lista);
         
-        ValidarListasRestrictivasResponse respuesta = validacionServiceImpl.validarListasRestrictivas(lista);
-        if (null == respuesta) {
+        Informe validarListasRestrictivas = validacionServiceImpl.validarListasRestrictivas(lista);
+        if (null == validarListasRestrictivas) {
             
             return ResponseEntity.status(HttpStatus.NOT_FOUND).body(null);
         }
         
-        System.out.println("Respuesta: "+ respuesta);
-        return ResponseEntity.ok(respuesta);
+        System.out.println("Respuesta: "+ validarListasRestrictivas);
+        return ResponseEntity.ok(validarListasRestrictivas);
     }
 }
