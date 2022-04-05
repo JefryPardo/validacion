@@ -35,7 +35,7 @@ public class ValidacionServiceImpl extends WebServiceGatewaySupport {
 //            ValidarListasRestrictivasResponse response = (ValidarListasRestrictivasResponse) alfo.getValue();
 //            return response;
 
-                Object obj = callWebService(validacion);
+            Object obj = callWebService(validacion);
 
             ValidarListasRestrictivasResponse response = (ValidarListasRestrictivasResponse) obj;
 
